@@ -1,0 +1,17 @@
+	/*
+ * 
+ */
+package diagrama_concreta.diagram.part;
+
+	/**
+ * @generated
+ */
+public class Diagrama_concretaNodeDescriptor extends org.eclipse.gmf.tooling.runtime.update.UpdaterNodeDescriptor {
+		/**
+ * @generated
+ */
+public Diagrama_concretaNodeDescriptor(org.eclipse.emf.ecore.EObject modelElement, int visualID) {
+	super(modelElement, visualID);
+}
+
+	}

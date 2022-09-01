@@ -1,0 +1,185 @@
+/**
+ */
+package diagrama_concreta;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Tcd Atributo</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link diagrama_concreta.TcdAtributo#getNombre <em>Nombre</em>}</li>
+ *   <li>{@link diagrama_concreta.TcdAtributo#getTipoDato <em>Tipo Dato</em>}</li>
+ *   <li>{@link diagrama_concreta.TcdAtributo#getModificador <em>Modificador</em>}</li>
+ *   <li>{@link diagrama_concreta.TcdAtributo#isIsConstante <em>Is Constante</em>}</li>
+ *   <li>{@link diagrama_concreta.TcdAtributo#isIsStatic <em>Is Static</em>}</li>
+ *   <li>{@link diagrama_concreta.TcdAtributo#getValorDefecto <em>Valor Defecto</em>}</li>
+ * </ul>
+ *
+ * @see diagrama_concreta.Diagrama_concretaPackage#getTcdAtributo()
+ * @model annotation="gmf.node label='nombre'"
+ * @generated
+ */
+public interface TcdAtributo extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Nombre</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Nombre</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Nombre</em>' attribute.
+	 * @see #setNombre(String)
+	 * @see diagrama_concreta.Diagrama_concretaPackage#getTcdAtributo_Nombre()
+	 * @model
+	 * @generated
+	 */
+	String getNombre();
+
+	/**
+	 * Sets the value of the '{@link diagrama_concreta.TcdAtributo#getNombre <em>Nombre</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Nombre</em>' attribute.
+	 * @see #getNombre()
+	 * @generated
+	 */
+	void setNombre(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Tipo Dato</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Tipo Dato</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Tipo Dato</em>' attribute.
+	 * @see #setTipoDato(String)
+	 * @see diagrama_concreta.Diagrama_concretaPackage#getTcdAtributo_TipoDato()
+	 * @model
+	 * @generated
+	 */
+	String getTipoDato();
+
+	/**
+	 * Sets the value of the '{@link diagrama_concreta.TcdAtributo#getTipoDato <em>Tipo Dato</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Tipo Dato</em>' attribute.
+	 * @see #getTipoDato()
+	 * @generated
+	 */
+	void setTipoDato(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Modificador</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Modificador</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Modificador</em>' attribute.
+	 * @see #setModificador(String)
+	 * @see diagrama_concreta.Diagrama_concretaPackage#getTcdAtributo_Modificador()
+	 * @model
+	 * @generated
+	 */
+	String getModificador();
+
+	/**
+	 * Sets the value of the '{@link diagrama_concreta.TcdAtributo#getModificador <em>Modificador</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Modificador</em>' attribute.
+	 * @see #getModificador()
+	 * @generated
+	 */
+	void setModificador(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Is Constante</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Is Constante</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Is Constante</em>' attribute.
+	 * @see #setIsConstante(boolean)
+	 * @see diagrama_concreta.Diagrama_concretaPackage#getTcdAtributo_IsConstante()
+	 * @model
+	 * @generated
+	 */
+	boolean isIsConstante();
+
+	/**
+	 * Sets the value of the '{@link diagrama_concreta.TcdAtributo#isIsConstante <em>Is Constante</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Is Constante</em>' attribute.
+	 * @see #isIsConstante()
+	 * @generated
+	 */
+	void setIsConstante(boolean value);
+
+	/**
+	 * Returns the value of the '<em><b>Is Static</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Is Static</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Is Static</em>' attribute.
+	 * @see #setIsStatic(boolean)
+	 * @see diagrama_concreta.Diagrama_concretaPackage#getTcdAtributo_IsStatic()
+	 * @model
+	 * @generated
+	 */
+	boolean isIsStatic();
+
+	/**
+	 * Sets the value of the '{@link diagrama_concreta.TcdAtributo#isIsStatic <em>Is Static</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Is Static</em>' attribute.
+	 * @see #isIsStatic()
+	 * @generated
+	 */
+	void setIsStatic(boolean value);
+
+	/**
+	 * Returns the value of the '<em><b>Valor Defecto</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Valor Defecto</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Valor Defecto</em>' attribute.
+	 * @see #setValorDefecto(String)
+	 * @see diagrama_concreta.Diagrama_concretaPackage#getTcdAtributo_ValorDefecto()
+	 * @model
+	 * @generated
+	 */
+	String getValorDefecto();
+
+	/**
+	 * Sets the value of the '{@link diagrama_concreta.TcdAtributo#getValorDefecto <em>Valor Defecto</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Valor Defecto</em>' attribute.
+	 * @see #getValorDefecto()
+	 * @generated
+	 */
+	void setValorDefecto(String value);
+
+} // TcdAtributo

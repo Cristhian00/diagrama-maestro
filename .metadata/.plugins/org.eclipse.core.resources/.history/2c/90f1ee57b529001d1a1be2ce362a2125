@@ -1,0 +1,18 @@
+/*
+ * 
+ */
+package diagrama_concreta.diagram.edit.helpers;
+
+/**
+ * @generated
+ */
+public class Diagrama_concretaBaseEditHelper extends org.eclipse.gmf.tooling.runtime.edit.helpers.GeneratedEditHelperBase {
+
+		
+		
+	
+	
+	
+	
+	
+	}

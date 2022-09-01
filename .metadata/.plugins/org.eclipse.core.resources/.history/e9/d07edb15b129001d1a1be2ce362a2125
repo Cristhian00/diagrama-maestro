@@ -1,0 +1,17 @@
+/**
+ */
+package diagrama_concreta;
+
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Relacion Herencia</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ *
+ * @see diagrama_concreta.Diagrama_concretaPackage#getRelacionHerencia()
+ * @model
+ * @generated
+ */
+public interface RelacionHerencia extends TcdRelacion {
+} // RelacionHerencia

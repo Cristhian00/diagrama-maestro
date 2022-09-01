@@ -1,0 +1,51 @@
+	/*
+ * 
+ */
+package diagrama_concreta.diagram.edit.policies;
+
+	/**
+ * @generated
+ */
+public class TcdDiagramaClasesItemSemanticEditPolicy extends diagrama_concreta.diagram.edit.policies.Diagrama_concretaBaseItemSemanticEditPolicy {
+
+		/**
+ * @generated
+ */
+	public TcdDiagramaClasesItemSemanticEditPolicy() {
+				super(diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdDiagramaClases_1000);
+	}
+
+	
+	/**
+ * @generated
+ */
+	protected org.eclipse.gef.commands.Command getCreateCommand(org.eclipse.gmf.runtime.emf.type.core.requests.CreateElementRequest req) {
+		if (diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdClase_2001 == req.getElementType()) {
+	return getGEFWrapper(new diagrama_concreta.diagram.edit.commands.TcdClaseCreateCommand(req));
+}
+		return super.getCreateCommand(req);
+	}
+	
+		/**
+ * @generated
+ */
+protected org.eclipse.gef.commands.Command getDuplicateCommand(org.eclipse.gmf.runtime.emf.type.core.requests.DuplicateElementsRequest req) {
+	org.eclipse.emf.transaction.TransactionalEditingDomain editingDomain = ((org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart) getHost()).getEditingDomain();
+	return getGEFWrapper(new DuplicateAnythingCommand(editingDomain, req));
+}
+	
+		/**
+ * @generated
+ */
+private static class DuplicateAnythingCommand extends org.eclipse.gmf.runtime.emf.commands.core.commands.DuplicateEObjectsCommand {
+
+		/**
+ * @generated
+ */
+public DuplicateAnythingCommand(org.eclipse.emf.transaction.TransactionalEditingDomain editingDomain, org.eclipse.gmf.runtime.emf.type.core.requests.DuplicateElementsRequest req) {
+	super(editingDomain, req.getLabel(), req.getElementsToBeDuplicated(), req.getAllDuplicatedElementsMap());
+}
+
+	}
+	
+	}

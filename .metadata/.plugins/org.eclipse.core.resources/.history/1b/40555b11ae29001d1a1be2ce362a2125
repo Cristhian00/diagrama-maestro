@@ -1,0 +1,130 @@
+/**
+ */
+package diagrama_concreta;
+
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Relacion Dependencia</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link diagrama_concreta.RelacionDependencia#getNombreOrigen <em>Nombre Origen</em>}</li>
+ *   <li>{@link diagrama_concreta.RelacionDependencia#getNombreDestino <em>Nombre Destino</em>}</li>
+ *   <li>{@link diagrama_concreta.RelacionDependencia#getMultiplicidadOrigen <em>Multiplicidad Origen</em>}</li>
+ *   <li>{@link diagrama_concreta.RelacionDependencia#getMultiplicidadDestino <em>Multiplicidad Destino</em>}</li>
+ * </ul>
+ *
+ * @see diagrama_concreta.Diagrama_concretaPackage#getRelacionDependencia()
+ * @model
+ * @generated
+ */
+public interface RelacionDependencia extends TcdRelacion {
+	/**
+	 * Returns the value of the '<em><b>Nombre Origen</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Nombre Origen</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Nombre Origen</em>' attribute.
+	 * @see #setNombreOrigen(String)
+	 * @see diagrama_concreta.Diagrama_concretaPackage#getRelacionDependencia_NombreOrigen()
+	 * @model
+	 * @generated
+	 */
+	String getNombreOrigen();
+
+	/**
+	 * Sets the value of the '{@link diagrama_concreta.RelacionDependencia#getNombreOrigen <em>Nombre Origen</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Nombre Origen</em>' attribute.
+	 * @see #getNombreOrigen()
+	 * @generated
+	 */
+	void setNombreOrigen(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Nombre Destino</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Nombre Destino</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Nombre Destino</em>' attribute.
+	 * @see #setNombreDestino(String)
+	 * @see diagrama_concreta.Diagrama_concretaPackage#getRelacionDependencia_NombreDestino()
+	 * @model
+	 * @generated
+	 */
+	String getNombreDestino();
+
+	/**
+	 * Sets the value of the '{@link diagrama_concreta.RelacionDependencia#getNombreDestino <em>Nombre Destino</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Nombre Destino</em>' attribute.
+	 * @see #getNombreDestino()
+	 * @generated
+	 */
+	void setNombreDestino(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Multiplicidad Origen</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Multiplicidad Origen</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Multiplicidad Origen</em>' attribute.
+	 * @see #setMultiplicidadOrigen(String)
+	 * @see diagrama_concreta.Diagrama_concretaPackage#getRelacionDependencia_MultiplicidadOrigen()
+	 * @model
+	 * @generated
+	 */
+	String getMultiplicidadOrigen();
+
+	/**
+	 * Sets the value of the '{@link diagrama_concreta.RelacionDependencia#getMultiplicidadOrigen <em>Multiplicidad Origen</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Multiplicidad Origen</em>' attribute.
+	 * @see #getMultiplicidadOrigen()
+	 * @generated
+	 */
+	void setMultiplicidadOrigen(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Multiplicidad Destino</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Multiplicidad Destino</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Multiplicidad Destino</em>' attribute.
+	 * @see #setMultiplicidadDestino(String)
+	 * @see diagrama_concreta.Diagrama_concretaPackage#getRelacionDependencia_MultiplicidadDestino()
+	 * @model
+	 * @generated
+	 */
+	String getMultiplicidadDestino();
+
+	/**
+	 * Sets the value of the '{@link diagrama_concreta.RelacionDependencia#getMultiplicidadDestino <em>Multiplicidad Destino</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Multiplicidad Destino</em>' attribute.
+	 * @see #getMultiplicidadDestino()
+	 * @generated
+	 */
+	void setMultiplicidadDestino(String value);
+
+} // RelacionDependencia

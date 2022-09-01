@@ -1,0 +1,173 @@
+/*
+ * 
+ */
+package diagrama_concreta.diagram.providers.assistants;
+
+/**
+ * @generated
+ */
+public class Diagrama_concretaModelingAssistantProviderOfTcdClaseEditPart extends diagrama_concreta.diagram.providers.Diagrama_concretaModelingAssistantProvider {
+
+					
+			/**
+ * @generated
+ */
+	@Override
+
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getRelTypesOnSource(org.eclipse.core.runtime.IAdaptable source) {
+		org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart sourceEditPart =
+				(org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart) source.getAdapter(
+						org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart.class);
+		return doGetRelTypesOnSource((diagrama_concreta.diagram.edit.parts.TcdClaseEditPart) sourceEditPart);
+	}
+	
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> doGetRelTypesOnSource(diagrama_concreta.diagram.edit.parts.TcdClaseEditPart source) {
+		java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.ArrayList<org.eclipse.gmf.runtime.emf.type.core.IElementType>(5);
+				types.add(diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdAsociacion_4001);
+				types.add(diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdComposicion_4002);
+				types.add(diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdDependencia_4003);
+				types.add(diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdHerencia_4004);
+				types.add(diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdAgregacion_4005);
+				return types;
+	}
+	
+		/**
+ * @generated
+ */
+	@Override
+
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getRelTypesOnSourceAndTarget(
+			org.eclipse.core.runtime.IAdaptable source, org.eclipse.core.runtime.IAdaptable target) {
+		org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart sourceEditPart =
+				(org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart) source.getAdapter(
+						org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart.class);
+		org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart targetEditPart =
+				(org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart) target.getAdapter(
+						org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart.class);
+		return doGetRelTypesOnSourceAndTarget((diagrama_concreta.diagram.edit.parts.TcdClaseEditPart) sourceEditPart, targetEditPart);
+	}
+
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> doGetRelTypesOnSourceAndTarget(diagrama_concreta.diagram.edit.parts.TcdClaseEditPart source, org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart targetEditPart) {
+		java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.LinkedList<org.eclipse.gmf.runtime.emf.type.core.IElementType>();
+							if (targetEditPart instanceof diagrama_concreta.diagram.edit.parts.TcdClaseEditPart) {
+			types.add(diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdAsociacion_4001);
+		}
+										if (targetEditPart instanceof diagrama_concreta.diagram.edit.parts.TcdClaseEditPart) {
+			types.add(diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdComposicion_4002);
+		}
+										if (targetEditPart instanceof diagrama_concreta.diagram.edit.parts.TcdClaseEditPart) {
+			types.add(diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdDependencia_4003);
+		}
+										if (targetEditPart instanceof diagrama_concreta.diagram.edit.parts.TcdClaseEditPart) {
+			types.add(diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdHerencia_4004);
+		}
+										if (targetEditPart instanceof diagrama_concreta.diagram.edit.parts.TcdClaseEditPart) {
+			types.add(diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdAgregacion_4005);
+		}
+							return types;
+	}
+
+			/**
+ * @generated
+ */
+	@Override
+
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getTypesForTarget(org.eclipse.core.runtime.IAdaptable source,
+			org.eclipse.gmf.runtime.emf.type.core.IElementType relationshipType) {
+		org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart sourceEditPart =
+				(org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart) source.getAdapter(
+						org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart.class);
+		return doGetTypesForTarget((diagrama_concreta.diagram.edit.parts.TcdClaseEditPart) sourceEditPart, relationshipType);
+	}
+	
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> doGetTypesForTarget(diagrama_concreta.diagram.edit.parts.TcdClaseEditPart source, org.eclipse.gmf.runtime.emf.type.core.IElementType relationshipType) {
+		java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.ArrayList<org.eclipse.gmf.runtime.emf.type.core.IElementType>();
+				if (relationshipType == diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdAsociacion_4001) {
+						types.add(diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdClase_2001);
+					}
+		 else 		if (relationshipType == diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdComposicion_4002) {
+						types.add(diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdClase_2001);
+					}
+		 else 		if (relationshipType == diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdDependencia_4003) {
+						types.add(diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdClase_2001);
+					}
+		 else 		if (relationshipType == diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdHerencia_4004) {
+						types.add(diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdClase_2001);
+					}
+		 else 		if (relationshipType == diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdAgregacion_4005) {
+						types.add(diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdClase_2001);
+					}
+				return types;
+	}
+
+		/**
+ * @generated
+ */
+	@Override
+
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getRelTypesOnTarget(org.eclipse.core.runtime.IAdaptable target) {
+		org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart targetEditPart =
+				(org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart) target.getAdapter(
+						org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart.class);
+		return doGetRelTypesOnTarget((diagrama_concreta.diagram.edit.parts.TcdClaseEditPart) targetEditPart);
+	}
+
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> doGetRelTypesOnTarget(diagrama_concreta.diagram.edit.parts.TcdClaseEditPart target) {
+		java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.ArrayList<org.eclipse.gmf.runtime.emf.type.core.IElementType>(5);
+				types.add(diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdAsociacion_4001);
+				types.add(diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdComposicion_4002);
+				types.add(diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdDependencia_4003);
+				types.add(diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdHerencia_4004);
+				types.add(diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdAgregacion_4005);
+				return types;
+	}
+
+		/**
+ * @generated
+ */
+	@Override
+
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getTypesForSource(org.eclipse.core.runtime.IAdaptable target,
+			org.eclipse.gmf.runtime.emf.type.core.IElementType relationshipType) {
+		org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart targetEditPart =
+				(org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart) target.getAdapter(
+						org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart.class);
+		return doGetTypesForSource((diagrama_concreta.diagram.edit.parts.TcdClaseEditPart) targetEditPart, relationshipType);
+	}
+
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> doGetTypesForSource(diagrama_concreta.diagram.edit.parts.TcdClaseEditPart target, org.eclipse.gmf.runtime.emf.type.core.IElementType relationshipType) {
+		java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.ArrayList<org.eclipse.gmf.runtime.emf.type.core.IElementType>();
+				if (relationshipType == diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdAsociacion_4001) {
+						types.add(diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdClase_2001);
+					}
+		 else 		if (relationshipType == diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdComposicion_4002) {
+						types.add(diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdClase_2001);
+					}
+		 else 		if (relationshipType == diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdDependencia_4003) {
+						types.add(diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdClase_2001);
+					}
+		 else 		if (relationshipType == diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdHerencia_4004) {
+						types.add(diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdClase_2001);
+					}
+		 else 		if (relationshipType == diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdAgregacion_4005) {
+						types.add(diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TcdClase_2001);
+					}
+				return types;
+	}
+
+	}

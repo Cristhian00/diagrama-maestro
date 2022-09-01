@@ -1,0 +1,17 @@
+/*
+ * 
+ */
+package diagrama_concreta.diagram.preferences;
+
+/**
+ * @generated
+ */
+public class DiagramGeneralPreferencePage extends org.eclipse.gmf.runtime.diagram.ui.preferences.DiagramsPreferencePage {
+
+	/**
+ * @generated
+ */
+	public DiagramGeneralPreferencePage() {
+		setPreferenceStore(diagrama_concreta.diagram.part.Diagrama_concretaDiagramEditorPlugin.getInstance().getPreferenceStore());
+	}
+}

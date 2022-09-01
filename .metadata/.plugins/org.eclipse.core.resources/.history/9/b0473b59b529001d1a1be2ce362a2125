@@ -1,0 +1,18 @@
+/*
+ * 
+ */
+package diagrama_concreta.diagram.providers;
+
+/**
+ * @generated
+ */
+public class Diagrama_concretaIconProvider extends org.eclipse.gmf.tooling.runtime.providers.DefaultElementTypeIconProvider implements org.eclipse.gmf.runtime.common.ui.services.icon.IIconProvider {
+
+		/**
+ * @generated
+ */
+	public Diagrama_concretaIconProvider() {
+		super(diagrama_concreta.diagram.providers.Diagrama_concretaElementTypes.TYPED_INSTANCE);
+	}
+
+	}

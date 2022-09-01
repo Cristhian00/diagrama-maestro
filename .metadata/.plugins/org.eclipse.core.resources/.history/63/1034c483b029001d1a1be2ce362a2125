@@ -1,0 +1,102 @@
+@namespace(uri="diagrama_concreta", prefix="diagrama_concreta")
+@gmf
+package diagrama_concreta;
+
+@gmf.diagram
+class TcdDiagramaClases {
+    val TcdClase[*] listaClases;
+    val TcdRelacion[*] listaRelaciones;
+    
+    attr String nombre;
+}
+
+@gmf.node(label = "nombre")
+class TcdClase {
+    @gmf.compartment
+    val TcdAtributo[*] listaAtributos;
+    @gmf.compartment
+    val TcdMetodo[*] listaMetodos;
+    
+    attr String nombre;
+    attr String estereotipo;
+    attr String modificadorAcceso;
+    attr boolean isAbstract;
+    attr String documentacion;
+}
+
+@gmf.link(source="source", target="target", style="solid", width="2")
+class TcdRelacion {
+    ref TcdClase source;
+    ref TcdClase target;
+    
+    attr String navegavilidad;
+}
+
+class RelacionAsociacion extends TcdRelacion{
+	
+	attr String nombreOrigen;
+    attr String nombreDestino;
+    attr Multiplicidad multiplicidadOrigen;
+    attr Multiplicidad multiplicidadDestino;
+}
+
+class RelacionComposicion extends TcdRelacion{
+	
+	attr String nombreOrigen;
+    attr String nombreDestino;
+    attr Multiplicidad multiplicidadOrigen;
+    attr Multiplicidad multiplicidadDestino;
+}
+
+class RelacionDependencia extends TcdRelacion{
+	
+	attr String nombreOrigen;
+    attr String nombreDestino;
+    attr Multiplicidad multiplicidadOrigen;
+    attr Multiplicidad multiplicidadDestino;
+}
+
+class RelacionHerencia extends TcdRelacion{
+	
+}
+
+class RelacionAgregacion extends TcdRelacion{
+	
+	attr String nombreOrigen;
+    attr String nombreDestino;
+    attr Multiplicidad multiplicidadOrigen;
+    attr Multiplicidad multiplicidadDestino;
+}
+
+enum Multiplicidad {
+	uno;
+	uno_cero;
+	cero_varios;
+	uno_varios;
+}
+
+@gmf.node(label = "nombre")
+class TcdAtributo {
+	attr String nombre;
+	attr String tipoDato;
+	attr String modificador;
+	attr boolean isConstante;
+	attr boolean isStatic;
+	attr String valorDefecto;
+}
+
+@gmf.node(label = "nombre")
+class TcdMetodo {
+    val TcdParametro[*] listaParametros;
+	
+	attr String nombre;
+	attr String modificadorAcceso;
+	attr String tipoRetorno;
+	attr String semantica;
+}
+
+@gmf.node(label = "nombre")
+class TcdParametro {
+	attr String nombre;
+	attr String tipoDato;
+}

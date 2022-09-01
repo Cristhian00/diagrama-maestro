@@ -1,0 +1,58 @@
+@namespace(uri="abstracta", prefix="abstracta")
+@gmf
+package abstracta;
+
+class TcdPaquete {
+    val TcdClase[*] listaClases;
+    val TcdPaquete[*] listapaquetes;
+    
+    attr String nombre;
+    attr String ruta;
+}
+
+class TcdClase {
+    val TcdAtributo[*] listaAtributos;
+    val TcdMetodo[*] listaMetodos;
+    val TcdRelacion[*] listaRelaciones;
+    
+    attr String nombre;
+    attr String estereotipo;
+    attr String modificadorAcceso;
+    attr boolean isAbstract;
+    attr String documentacion;
+}
+
+class TcdAtributo {
+    attr String nombre;
+	attr String tipoDato;
+	attr String modificador;
+	attr boolean isConstante;
+	attr boolean isStatic;
+	attr String valorDefecto;
+}
+
+class TcdMetodo {
+    val TcdParametro[*] listaParametros;
+	
+	attr String nombre;
+	attr String modificadorAcceso;
+	attr String tipoRetorno;
+	attr String semantica;
+}
+
+class TcdRelacion {
+    ref TcdClase source;
+    ref TcdClase target;
+    
+    attr String nombreOrigen;
+    attr String nombreDestino;
+    attr String multiplicidadOrigen;
+    attr String multiplicidadDestino;
+    attr String tipoRelacion;
+    attr String navegavilidad;
+}
+
+class TcdParametro {
+    attr String nombre;
+	attr String tipoDato;
+}

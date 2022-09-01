@@ -1,0 +1,256 @@
+/**
+ */
+package diagrama_concreta.impl;
+
+import diagrama_concreta.*;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EDataType;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EPackage;
+
+import org.eclipse.emf.ecore.impl.EFactoryImpl;
+
+import org.eclipse.emf.ecore.plugin.EcorePlugin;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model <b>Factory</b>.
+ * <!-- end-user-doc -->
+ * @generated
+ */
+public class Diagrama_concretaFactoryImpl extends EFactoryImpl implements Diagrama_concretaFactory {
+	/**
+	 * Creates the default factory implementation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static Diagrama_concretaFactory init() {
+		try {
+			Diagrama_concretaFactory theDiagrama_concretaFactory = (Diagrama_concretaFactory)EPackage.Registry.INSTANCE.getEFactory(Diagrama_concretaPackage.eNS_URI);
+			if (theDiagrama_concretaFactory != null) {
+				return theDiagrama_concretaFactory;
+			}
+		}
+		catch (Exception exception) {
+			EcorePlugin.INSTANCE.log(exception);
+		}
+		return new Diagrama_concretaFactoryImpl();
+	}
+
+	/**
+	 * Creates an instance of the factory.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Diagrama_concretaFactoryImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EObject create(EClass eClass) {
+		switch (eClass.getClassifierID()) {
+			case Diagrama_concretaPackage.TCD_DIAGRAMA_CLASES: return createTcdDiagramaClases();
+			case Diagrama_concretaPackage.TCD_CLASE: return createTcdClase();
+			case Diagrama_concretaPackage.TCD_RELACION: return createTcdRelacion();
+			case Diagrama_concretaPackage.RELACION_ASOCIACION: return createRelacionAsociacion();
+			case Diagrama_concretaPackage.RELACION_COMPOSICION: return createRelacionComposicion();
+			case Diagrama_concretaPackage.RELACION_DEPENDENCIA: return createRelacionDependencia();
+			case Diagrama_concretaPackage.RELACION_HERENCIA: return createRelacionHerencia();
+			case Diagrama_concretaPackage.RELACION_AGREGACION: return createRelacionAgregacion();
+			case Diagrama_concretaPackage.TCD_ATRIBUTO: return createTcdAtributo();
+			case Diagrama_concretaPackage.TCD_METODO: return createTcdMetodo();
+			case Diagrama_concretaPackage.TCD_PARAMETRO: return createTcdParametro();
+			default:
+				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object createFromString(EDataType eDataType, String initialValue) {
+		switch (eDataType.getClassifierID()) {
+			case Diagrama_concretaPackage.MULTIPLICIDAD:
+				return createMultiplicidadFromString(eDataType, initialValue);
+			default:
+				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String convertToString(EDataType eDataType, Object instanceValue) {
+		switch (eDataType.getClassifierID()) {
+			case Diagrama_concretaPackage.MULTIPLICIDAD:
+				return convertMultiplicidadToString(eDataType, instanceValue);
+			default:
+				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TcdDiagramaClases createTcdDiagramaClases() {
+		TcdDiagramaClasesImpl tcdDiagramaClases = new TcdDiagramaClasesImpl();
+		return tcdDiagramaClases;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TcdClase createTcdClase() {
+		TcdClaseImpl tcdClase = new TcdClaseImpl();
+		return tcdClase;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TcdRelacion createTcdRelacion() {
+		TcdRelacionImpl tcdRelacion = new TcdRelacionImpl();
+		return tcdRelacion;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RelacionAsociacion createRelacionAsociacion() {
+		RelacionAsociacionImpl relacionAsociacion = new RelacionAsociacionImpl();
+		return relacionAsociacion;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RelacionComposicion createRelacionComposicion() {
+		RelacionComposicionImpl relacionComposicion = new RelacionComposicionImpl();
+		return relacionComposicion;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RelacionDependencia createRelacionDependencia() {
+		RelacionDependenciaImpl relacionDependencia = new RelacionDependenciaImpl();
+		return relacionDependencia;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RelacionHerencia createRelacionHerencia() {
+		RelacionHerenciaImpl relacionHerencia = new RelacionHerenciaImpl();
+		return relacionHerencia;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RelacionAgregacion createRelacionAgregacion() {
+		RelacionAgregacionImpl relacionAgregacion = new RelacionAgregacionImpl();
+		return relacionAgregacion;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TcdAtributo createTcdAtributo() {
+		TcdAtributoImpl tcdAtributo = new TcdAtributoImpl();
+		return tcdAtributo;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TcdMetodo createTcdMetodo() {
+		TcdMetodoImpl tcdMetodo = new TcdMetodoImpl();
+		return tcdMetodo;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TcdParametro createTcdParametro() {
+		TcdParametroImpl tcdParametro = new TcdParametroImpl();
+		return tcdParametro;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Multiplicidad createMultiplicidadFromString(EDataType eDataType, String initialValue) {
+		Multiplicidad result = Multiplicidad.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertMultiplicidadToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Diagrama_concretaPackage getDiagrama_concretaPackage() {
+		return (Diagrama_concretaPackage)getEPackage();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @deprecated
+	 * @generated
+	 */
+	@Deprecated
+	public static Diagrama_concretaPackage getPackage() {
+		return Diagrama_concretaPackage.eINSTANCE;
+	}
+
+} //Diagrama_concretaFactoryImpl
